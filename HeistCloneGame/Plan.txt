@@ -1,0 +1,76 @@
+✓	Make checklist
+
+✓	Interact with object with the E key.
+✓	Interactions always take time where the key is held down.
+✓	Movement is disabled while interacting with an object.
+✓	The object being interacted with is detected once when the interact key is pressed - the player can still look around while the key is held.
+	When looting, limit camera rotation to 45 degrees off the original angle?
+✓	While interacting with an object, a progress bar is put onto the UI to show when the interaction will be finished.
+	
+✓	The player can sprint
+	Sprint is limited
+✓	The player can crouch.
+	
+✓	Interact (e) with loot object to "bag" it. This takes 2 seconds.
+✓	Only one bag can be carried
+✓	Carried bags show their type on the UI.
+✓	When carrying a bag, the camera is tilted 15 degrees to the left. EDIT: 5 degrees
+✓	Bag can be thrown (g key)
+✓	Loot comes in types (jewelry, gold, money)
+✓	Loot type determines value.
+✓	Bags containing loot thrown into "stash zone" are deleted and added to score 1 second after colliding with it.
+✓	Once enough loot bags have been dropped into the van, the escape zone at the van becomes available.
+✓	Entering an active escape zone ends the level and finalizes your score. Any carried bags are automatically added to score.
+✓	Bags can contain non-loot. Non-loot bags don't get deleted by the stash zone.
+	Non-loot bags dropped into the "trash" zone are destroyed 1 second after collision.
+
+✓	Cameras detect the player
+✓	Cameras take 10 seconds to become "alerted".
+✓	Entities that can detect the player add a hud indicator that points back to them and shows their status.
+✓	Once alerted, the camera "calls" security. This takes 5 seconds, and sets off the alarm when it's finished.
+✓	Camera alert level cools down at the same rate that it heats up.
+✓	Once alarm is goes off, you have 1 minute to get to the van.
+✓	After the 1 minute is up, you automatically lose.
+✓	Cameras can be in a "loop" state, where they can't detect the player. This state lasts 20 seconds.
+✓	Cameras can be interacted with to set them to the "loop" state. This interaction takes 2 seconds.
+✓	Cameras can have an "operator". If the operator is killed, the cameras are disabled.
+
+	Losing sets your score to zero.
+
+	Main Menu
+		- Exit game
+		- select mission
+✓	Game Lobby
+		- Shows goals
+		- Select equipment?
+✓	Game Over
+✓		- Win Screen
+✓			- Shows total loot obtained in bags and raw value
+			- Shows time taken
+			- Shows enemies killed
+			- Shows accuracy
+✓		- Lose Screeen
+✓			- Shows game over.
+
+✓	Player has gun
+✓	Gun does a line trace to see if it hits anything.
+✓	Gun does 50 damage on hit.
+	Gun has a half-second cooldown after firing before it can fire again.
+✓	Cameras have 1 hp and perminantly break when damaged.
+
+✓	A guard is a thing.
+✓	The guard can detect the player
+✓	The guard uses the same detection rules as the camera
+✓	If the guard has patrol points, it will patrol between them. Each patrol point has a fixed wait time before the guard moves on to the next point.
+	If a guard is standing still, it will slowly look left and wait for 10 seconds, then slowly look right and wait for 10 seconds, then repeat.
+✓	Guards have 50 hp.
+	Armored guards have 100hp.
+✓	Killed guards leave behind a body.
+✓	Bodies and bags can be detected by guards and cameras in the same way they detect the player.
+✓	Bodies can be interacted with to "bag" them.
+	
+	If a camera is destroyed, a new guard will be spawned. It will go to the destroyed camera.
+✓	Guards can detect destroyed cameras in the same way they detect bodies, bags, and the player.
+
+✓	Player can crouch.
+	A crouching player reduces the detection range of the entity seeing them.
