@@ -4,6 +4,7 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/Pawn.h"
+#include "GameFramework/CharacterMovementComponent.h"
 #include "TeamPawn.generated.h"
 
 UCLASS(Blueprintable, Abstract, BlueprintType)
