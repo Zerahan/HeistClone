@@ -21,7 +21,7 @@ public:
 	UPROPERTY(Instanced, EditDefaultsOnly)
 	UShapeComponent* CollisionComponent;
 
-//#ifdef WITH_EDITORONLY_DATA
+#if WITH_EDITORONLY_DATA
 public:
 	UPROPERTY(BlueprintReadWrite, EditInstanceOnly, category = "Default")
 	bool bBlockAll;
@@ -34,7 +34,8 @@ public:
 
 	UPROPERTY(BlueprintReadWrite, EditInstanceOnly, category = "Default")
 	bool bBlockPathing;
-//#endif
+#endif
+
 #ifdef WITH_EDITOR
 public:
 	virtual void PostEditChangeProperty(FPropertyChangedEvent& PropertyChangedEvent) override;

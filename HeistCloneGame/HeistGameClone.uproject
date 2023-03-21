@@ -10,8 +10,15 @@
 			"LoadingPhase": "Default",
 			"AdditionalDependencies": [
 				"AIModule",
-				"Engine"
+				"Engine",
+				"CoreUObject",
+				"DeveloperSettings"
 			]
+		},
+		{
+			"Name": "HeistGameCloneEditor",
+			"Type": "Editor",
+			"LoadingPhase": "PostEngineInit"
 		}
 	]
 }
