@@ -15,7 +15,7 @@ UCLASS(BlueprintType, Blueprintable)
 class HEISTGAMECLONE_API ATeamPlayerController : public APlayerController, public IGenericTeamAgentInterface
 {
 	GENERATED_BODY()
-
+	
 	UPROPERTY(BlueprintReadWrite, EditAnywhere, Category = "Team", meta = (AllowPrivateAccess = "true"))
 	ETeamFaction TeamID;
 

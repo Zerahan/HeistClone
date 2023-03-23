@@ -9,6 +9,7 @@ FGenericTeamId ATeamPlayerController::GetGenericTeamId() const
 }
 
 ATeamPlayerController::ATeamPlayerController()
+	: Super()
 {
 	TeamID = ETeamFaction::T_Thief;
 }

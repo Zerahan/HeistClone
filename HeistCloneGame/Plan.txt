@@ -74,3 +74,14 @@
 
 ✓	Player can crouch.
 	A crouching player reduces the detection range of the entity seeing them.
+	
+	
+	
+	Idle characters rarely play special idle animations
+	Patrol points can trigger specific idle animations
+
+	I'm thinking it should be 4 player coop with counterop mechanics. Aka, the players need to deposit 6 bags into the group deposit, but each player has a special secondary drop point that gives only them the value of the loot.
+	
+	Random secret objectives:
+		Assassinate a specific guard
+		Deposit X loot of Y type at side location
